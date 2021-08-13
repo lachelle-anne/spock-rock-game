@@ -1,5 +1,3 @@
-
-
 const playerScoreEl = document.getElementById('playerScore');
 const playerChoiceEl = document.getElementById('playerChoice');
 const computerScoreEl = document.getElementById('computerScore');
@@ -36,6 +34,11 @@ const choices = {
 let playerScoreNumber = 0;
 let computerScoreNumber = 0;
 let computerChoice = '';
+
+function legendImage() {
+  var popup = document.getElementById("legend");
+  popup.classList.toggle("show");
+}
 
 //reset all 'selected' icons
 function resetSelected(){
